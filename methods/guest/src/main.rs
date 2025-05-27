@@ -1,10 +1,13 @@
+#![no_main]
+
 use risc0_zkvm::guest::env;
 
-fn main() {
-    // TODO: Implement your guest code here
 
+risc0_zkvm::guest::entry!(main);
+fn main() {
+    
     // read the input
-    let input: u32 = env::read();
+    let input: String = env::read();
 
     // TODO: do something with the input
 
