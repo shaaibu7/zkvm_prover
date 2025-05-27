@@ -74,7 +74,7 @@ impl Blockchain {
         self.chain.push(new_block);
     }
 
-    fn is_valid(&self) -> bool {
+    pub fn is_valid(&self) -> bool {
         for i in 1..self.chain.len() {
             
             let current = &self.chain[i];
