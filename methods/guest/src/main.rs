@@ -16,6 +16,6 @@ fn main() {
 
     let result: bool = deserialize.is_valid();
 
-    // write public output to the journal
+    // write public output to the receipt journal
     env::commit(&result);
 }
