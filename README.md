@@ -1,5 +1,7 @@
 # zkvm-blockchain-prover
 
+**This project is for educational purposes only and is not intended for production use.**
+
 This project demonstrates a blockchain prototype integrated with [RISC Zero zkVM](https://github.com/risc0) to prove the validity and consistency of the blockchain state. The blockchain state is computed on the **host machine** and validated in a **zkVM guest** environment. The host program proves the blockchain’s validity to any verifier, leveraging zero-knowledge proofs. Make sure you have the Rust toolchain (1.75+), `cargo` for building and running, and the `risc0` toolchain (installed via `cargo install cargo-risczero` if needed).
 
 ## Quick Development: Leveraging dev-mode
